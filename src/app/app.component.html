@@ -1,9 +1,13 @@
-<input type="text" [(ngModel)]="newTodo" (keyup.enter)="onAddTodo()">
-<h3>todo lsit</h3>
+<h3>todo list</h3>
+
+<input type="text" [(ngModel)]="newTodo">
+<button (click)="onAddTodo()">submit</button>
 <ul>
-  <li *ngFor="let item of todoList; let index = index">
-    <span>{{item.name}}</span>
-    <button *ngIf="!item.finished" (click)="finishItem(index)">finish</button>
-  </li>
+  <div *ngFor="let item of todoList; let index = index">
+    <app-todo-item
+      [item]="item"
+      (handleFinisheItem)="finishItem(index)"
+    ></app-todo-item>
+  </div>
 </ul>
 

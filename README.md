@@ -1,27 +1,29 @@
-# AngularApp
+#catalogue
+## work shop - preparation
+1. make sure npm(5XX) node(8XX) installed
+2. npm install -g @angular/cli@latest
+3. npm new project-name
+4. cd project-name
+5. ng server
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+## project stucture introduction
+1. introduce angular as a front end framework to build a awesome & reactive spa 
+2. angular cli can help us create project, create component, serve the app, build and optimize the code
+3. package.json //dependencies
+4. node_modules/ 
+5. src/ source code
+6. index.html // served by the server as the single page
+7. <script>s in page source are auto injected by cli
+  main.ts is the first code to be executed
+8. app.module.ts //
+  declarations, // self defined app components
+  imports, //angular itself built into multi-modules.eg the base functions we need to start our app
+  providers, // expose service and provides
+  bootstrap // the components needed in start up
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## start project
+1. add an <input> (data-binding and ngmodule)
+2. add a list to display todo list, (*ngFor)
+3. add finishe item function
+4. show item status (*ngIf)
+5. add <todoitem> component (@Component({}))
