@@ -13,8 +13,7 @@
 4. node_modules/ 
 5. src/ source code
 6. index.html // served by the server as the single page
-7. <script>s in page source are auto injected by cli
-  main.ts is the first code to be executed
+7. <script>s in page source are auto injected by cli // main.ts is the first code to be executed
 8. app.module.ts //
   declarations, // self defined app components
   imports, //angular itself built into multi-modules.eg the base functions we need to start our app
